@@ -1,3 +1,8 @@
+##################################################
+#                                                #
+#  Kyle Wilson's Customer Administration System  #
+#                                                #
+##################################################
 
 Currently working on the create, read, update, and delete features within the GUI.
 
@@ -8,5 +13,20 @@ Need to learn how to do unit testing, thinking on that...
 All input is more than welcome!
 
 
-I am using the Eclipse Indigo IDE to maintain this code. 
-It'll probably be easiest to import the project using that program.
+##############################
+#                            #
+#  Installation Information  #
+#                            #
+##############################
+
+I am using the Eclipse Indigo IDE to maintain this code.
+ 
+It'd probably be easiest for anyone if they imported the project using that program, but
+that is just my recommendation.
+
+I will also do regular builds, named "build_DD_MM_YYYY.jar
+
+All builds will be a runnable JAR file. To run the JAR file, you need the Java Runtime Environment.
+In Windows, you should be able to double click the JAR file and it will just run. In linux, do "java -jar build_DD_MM_YYYY.jar"
+
+The JAR will create a folder containing the Apache Derby database in the directory in which you run the file.
