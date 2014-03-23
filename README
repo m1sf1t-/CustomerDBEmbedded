@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Currently working on the create, read, update, and delete features within the GUI.
 
 Back end database classes all seem to work fine. No known bugs. Will do more testing.
@@ -5,3 +6,6 @@ Back end database classes all seem to work fine. No known bugs. Will do more tes
 Need to learn how to do unit testing, thinking on that...
 
 All input is more than welcome!
+=======
+Readme file to be written.
+>>>>>>> b43bf2899f293d0899b6aa01620f7f95bd4b7119
