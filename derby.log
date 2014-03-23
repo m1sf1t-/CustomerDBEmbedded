@@ -1,0 +1,61 @@
+Sun Mar 23 20:33:35 GMT 2014 Thread[main,5,main] Cleanup action starting
+java.sql.SQLException: Database 'CustomerDatabase' not found.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.newEmbedSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.newEmbedSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.newSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleDBNotFound(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection40.<init>(Unknown Source)
+	at org.apache.derby.jdbc.Driver40.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.Driver20.connect(Unknown Source)
+	at org.apache.derby.jdbc.AutoloadedDriver.connect(Unknown Source)
+	at java.sql.DriverManager.getConnection(DriverManager.java:615)
+	at java.sql.DriverManager.getConnection(DriverManager.java:213)
+	at uk.co.wilsonpcrepair.model.DBManager.dbExists(DBManager.java:92)
+	at uk.co.wilsonpcrepair.model.DBManager.<init>(DBManager.java:48)
+	at uk.co.wilsonpcrepair.controller.MainApplication.<init>(MainApplication.java:20)
+	at uk.co.wilsonpcrepair.controller.MainApplication.main(MainApplication.java:76)
+Caused by: java.sql.SQLException: Database 'CustomerDatabase' not found.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source)
+	... 18 more
+============= begin nested exception, level (1) ===========
+java.sql.SQLException: Database 'CustomerDatabase' not found.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.newEmbedSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.newEmbedSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.newSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleDBNotFound(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection40.<init>(Unknown Source)
+	at org.apache.derby.jdbc.Driver40.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.Driver20.connect(Unknown Source)
+	at org.apache.derby.jdbc.AutoloadedDriver.connect(Unknown Source)
+	at java.sql.DriverManager.getConnection(DriverManager.java:615)
+	at java.sql.DriverManager.getConnection(DriverManager.java:213)
+	at uk.co.wilsonpcrepair.model.DBManager.dbExists(DBManager.java:92)
+	at uk.co.wilsonpcrepair.model.DBManager.<init>(DBManager.java:48)
+	at uk.co.wilsonpcrepair.controller.MainApplication.<init>(MainApplication.java:20)
+	at uk.co.wilsonpcrepair.controller.MainApplication.main(MainApplication.java:76)
+============= end nested exception, level (1) ===========
+Cleanup action completed
+----------------------------------------------------------------
+Sun Mar 23 20:33:35 GMT 2014:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.10.1.1 - (1458268): instance a816c00e-0144-f0a6-0148-000000aea4c0 
+on database directory /media/share/Kyle/programs/java/workspace/CustomerDBEmbedded/CustomerDatabase with class loader sun.misc.Launcher$AppClassLoader@de6f34 
+Loaded from file:/media/share/Kyle/programs/java/workspace/CustomerDBEmbedded/build_23_03_2014.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_30-b30
+user.dir=/media/share/Kyle/programs/java/workspace/CustomerDBEmbedded
+os.name=Linux
+os.arch=i386
+os.version=3.2.0-23-generic-pae
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
